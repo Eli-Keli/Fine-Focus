@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Logo from '@/assets/logos/png/logo_2.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,13 +34,13 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
+        "fixed top-[-20px] w-full z-50 transition-all duration-300",
         isScrolled ? "bg-dark/95 backdrop-blur-md py-4 shadow-lg" : "bg-transparent py-6"
       )}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <a href="#home" className="text-2xl font-serif font-bold text-white">
-          <span className="text-gradient">Fine Focus</span> Productions
+        <a href="#home" className="flex items-center">
+          <img src={Logo} alt="Fine Focus Productions" className="h-32" />
         </a>
 
         {/* Desktop Menu */}
