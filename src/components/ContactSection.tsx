@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Instagram, Linkedin, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Linkedin, MessageCircle, Twitter } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -56,10 +56,13 @@ const ContactSection = () => {
                         <div>
                             <h4 className="font-medium text-white mb-4">Follow Us</h4>
                             <div className="flex gap-4">
-                                <a href="#" className="w-12 h-12 rounded-full bg-dark-lighter flex items-center justify-center transition-all hover:bg-gold hover:text-dark">
+                                <a href="https://www.instagram.com/finefocusproductions" className="w-12 h-12 rounded-full bg-dark-lighter flex items-center justify-center transition-all hover:bg-gold hover:text-dark" target="_blank" rel="noopener noreferrer">
                                     <Instagram size={20} />
                                 </a>
-                                <a href="#" className="w-12 h-12 rounded-full bg-dark-lighter flex items-center justify-center transition-all hover:bg-gold hover:text-dark">
+                                <a href="https://x.com/FineFocusLtd" className="w-12 h-12 rounded-full bg-dark-lighter flex items-center justify-center transition-all hover:bg-gold hover:text-dark" target="_blank" rel="noopener noreferrer">
+                                    <Twitter size={20} />
+                                </a>
+                                <a href="https://www.linkedin.com/company/fine-focus-productions/" className="w-12 h-12 rounded-full bg-dark-lighter flex items-center justify-center transition-all hover:bg-gold hover:text-dark" target="_blank" rel="noopener noreferrer">
                                     <Linkedin size={20} />
                                 </a>
                             </div>
