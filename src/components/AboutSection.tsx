@@ -1,5 +1,33 @@
-import React from 'react';
 import TeamImg from '../assets/images/team_celfie2.png';
+import BritishCouncil from "@/assets/logos/png/BritishCouncil_Logo.png";
+import ClimateKic from "@/assets/logos/png/climate_kic.png";
+import EU from "@/assets/logos/png/eu_logo.png";
+import GrowthAfrica from "@/assets/logos/png/GrowthAfrica.png";
+import Food4Education from "@/assets/logos/png/food4E_logo.png";
+import Mogo from "@/assets/logos/svg/mogo-logo.svg";
+import Blankets from "@/assets/logos/png/Blankets_logo.png";
+import GooglePhotos from "@/assets/logos/png/GooglePhotos_logo.png";
+import Nivea from "@/assets/logos/png/Nivea_logo.png";
+import CeraVe from "@/assets/logos/png/CeraVe_logo.png";
+import GoodTimesAfrica from "@/assets/logos/png/GoodTimesAfrica_logo.png";
+import BelgiumEmbassy from "@/assets/logos/png/BelgiumEmbassy_logo.png";
+import Marathon from "@/assets/logos/png/Marathon_logo.png";
+
+const brands = [
+    BritishCouncil,
+    Food4Education,
+    ClimateKic,
+    EU,
+    GrowthAfrica,
+    Mogo,
+    Blankets,
+    GooglePhotos,
+    Nivea,
+    CeraVe,
+    GoodTimesAfrica,
+    BelgiumEmbassy,
+    Marathon,
+]
 
 const AboutSection = () => {
     return (
@@ -51,15 +79,15 @@ const AboutSection = () => {
                 </div>
 
                 <div className="mt-24">
-                    <h3 className="text-center text-xl font-serif text-gold mb-10">Trusted by Leading Brands</h3>
+                    <h3 className="text-center text-xl font-serif text-gold mb-10">Trusted by Leading Brands We've worked with</h3>
 
-                    <div className="flex flex-wrap justify-center gap-10 md:gap-16 opacity-70">
-                        {["British Council", "Brand 2", "Brand 3", "Brand 4", "Brand 5"].map((brand, index) => (
+                    <div className="flex flex-wrap justify-center gap-2 md:gap-4 opacity-70">
+                        {brands.map((brand, index) => (
                             <div
                                 key={index}
-                                className="w-24 h-12 flex items-center justify-center bg-dark-light rounded-md"
+                                className="w-52 h-40 flex items-center justify-center"
                             >
-                                <span className="text-white/40">{brand}</span>
+                                <img src={brand} alt="Brand Logo" className="max-h-full max-w-full object-contain" />
                             </div>
                         ))}
                     </div>
